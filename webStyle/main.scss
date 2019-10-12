@@ -1,0 +1,63 @@
+// Global Variable Imports.
+
+@import './_libraries/bootstrap/bootstrap';
+@import './_abstracts/variables';
+@import './_themes/theme';
+@import './_base/typography';
+@import './_abstracts/functions';
+@import './_components/component';
+
+
+// Component Imports.
+@import './_components/component.scss';
+@import './_components/footer';
+@import './_components/header';
+
+// Block Imports.
+@import './_blocks/block'; 
+
+
+
+// Page Imports.
+@import './_pages/page'; 
+
+
+// Common Styles
+html,
+body {
+    background-color: $night;
+    color: $spray;
+    height: 100%;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    min-height: 1000px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+}
+
+
+footer {
+    width: 100%;
+}
+

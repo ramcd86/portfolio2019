@@ -1,0 +1,32 @@
+// This file is for defining pages.
+
+.container--Profile {
+    display: block;
+    .header-container {
+        background-image: url('./../../nStatic/img/background.png');
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center -50px;
+        background-size: contain;
+        @include media-breakpoint-down(sm) {
+            background-position: center 80px;
+            background-size: 125%;
+        }
+        .arrow-strapper {
+            margin-top: 65vh;
+            @include media-breakpoint-down(sm) {
+                margin-top: 70vh;
+            }
+        }
+    }
+    .blurb-container {
+        margin-top: 170px;
+        margin-bottom: 170px;
+        p {
+            line-height: 165%;
+            font-family: 'Archivo', sans-serif;
+            display: block;
+        }
+    }
+
+}

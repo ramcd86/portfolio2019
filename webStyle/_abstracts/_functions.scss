@@ -1,0 +1,189 @@
+// Accelerator Functions
+@mixin shadow {
+  box-shadow: 0 5px 6px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
+}
+
+@mixin globalStyles {
+  h1 {
+    font-size: 60px;
+    font-weight: 300;
+    color: $sky;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 300;
+    color: $royal;
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: 300;
+    color: $royal;
+  }
+  h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: $royal;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $royal;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+// Base funcitons
+@mixin unsetter {
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    transform: unset !important;
+    width: 100%
+  }
+  
+  @mixin non-binder {
+    position: absolute;
+    top: 50%;
+    left: unset !important;
+    transform: unset !important;
+    width: 100%
+  }
+  
+  @mixin centerer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%
+    }
+  
+  
+  
+    @mixin centerer-vert-left {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(-0%, -50%);
+    }
+  
+    @mixin centerer-vert-right {
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      transform: translate(-0%, -50%);
+    }
+    @mixin pull-bottom {
+      position: absolute;
+      top: 100%;
+      right: 0%;
+      transform: translate(-0%, -50%);
+      width: 100%;
+    }
+  
+    @mixin pull-bottom2 {
+      position: absolute;
+      top: 100%;
+      right: 0%;
+      transform: translate(-0%, -50%);
+    }
+  
+    // banner block
+  
+    @mixin ban {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%
+    }
+  
+  
+    // top right
+  
+    @mixin top-right {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%,-0%);
+      text-align: right;
+    }
+  
+      // top center
+    
+  
+    @mixin top-middle {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%,-0%);
+      // text-align: center;
+    }
+  
+        // top left
+    @mixin top-left {  
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    text-align: left;
+  }
+    // middle left
+  
+    @mixin center-left {
+    position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(-0%,-50%);
+      text-align: left;
+    }
+  
+    // middle center
+   @mixin center {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+  
+    // middle right
+   @mixin center-right {
+    position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-100%,-50%);
+      text-align: right;
+    }
+  
+    // bottom center
+  
+    @mixin bottom-middle {
+    position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      text-align: center;
+  }
+  
+    // bottom right
+  
+    @mixin bottom-right {
+    position: absolute;
+      top: 100%;
+      left: 100%;
+      transform: translate(-100%, -100%);
+      text-align: right;
+  }
+  
+    // bottom left
+  
+    @mixin bottom-left {
+    position: absolute;
+      top: 100%;
+      left: 0%;
+      transform: translate(-0%, -100%);
+      text-align: left;
+  }
