@@ -19,6 +19,7 @@
             }
         }
     }
+
     .blurb-container {
         margin-top: 170px;
         margin-bottom: 170px;
@@ -26,6 +27,40 @@
             line-height: 165%;
             font-family: 'Archivo', sans-serif;
             display: block;
+        }
+    }
+
+    .technologies-container {
+        font-family: 'Archivo', sans-serif;
+        .tech-jumbo {
+            min-height: 400px;
+            background-image: url('./../../nStatic/img/first-title.jpeg');
+            background-position: center;
+            background-size: 105%;
+            margin-bottom: 100px;
+            .title-container {
+                margin-top: 150px;
+                height: 86px;
+            }
+            .arrow-container {
+                height: 100px;
+            }
+        }
+        .col-bar {
+            border-right: 1px solid #2A526C;
+        }
+        p {
+            color: #85C8F3;
+            font-size: 18px;
+            line-height: 165%;
+            display: block;
+        }
+        h3 {
+            font-size: 22px;
+            color: #C5C6C7;
+            line-height: 165%;
+            display: block;
+            font-weight: 600;
         }
     }
 
