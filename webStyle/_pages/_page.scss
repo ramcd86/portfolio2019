@@ -38,8 +38,8 @@ main {
     }
 
     .blurb-container {
-        margin-top: 170px;
-        margin-bottom: 170px;
+        margin-top: 270px;
+        margin-bottom: 270px;
         p {
             line-height: 165%;
             font-family: 'Archivo', sans-serif;
@@ -49,13 +49,13 @@ main {
 
     .technologies-container {
         font-family: 'Archivo', sans-serif;
-        margin-bottom: 170px;
+        margin-bottom: 270px;
         .tech-jumbo {
             min-height: 400px;
-            background-image: url('./../../nStatic/img/first-title.jpeg');
+            // background-image: url('./../../nStatic/img/first-title.jpeg');
             background-position: center;
             background-size: 105%;
-            margin-bottom: 100px;
+            margin-bottom: 30px;
             .title-container {
                 margin-top: 150px;
                 height: 86px;
@@ -100,19 +100,63 @@ main {
 
     .companies-container {
         font-family: 'Archivo', sans-serif;
-        margin-bottom: 170px;
+        margin-bottom: 270px;
         .companies-jumbo {
             min-height: 400px;
-            background-image: url('./../../nStatic/img/second-title.jpeg');
             background-position: center;
             background-size: 105%;
-            margin-bottom: 100px;
+            margin-bottom: 30px;
             .title-container {
                 margin-top: 150px;
                 height: 86px;
             }
             .arrow-container {
                 height: 100px;
+            }
+        }
+        .companies-blurb {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #2A526C;
+        }
+        .brand-container {
+            min-height: 210px;
+            margin-bottom: 30px;
+            &.energia {
+                background-image: url('./../../nStatic/img/energialogo.svg');
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.hornby {
+                background-image: url('./../../nStatic/img/hornbylogo.svg');
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.gym {
+                background-image: url('./../../nStatic/img/gymlogo.svg');
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.ferries {
+                background-image: url('./../../nStatic/img/irishferrieslogo.svg');
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.permtsb {
+                background-image: url('./../../nStatic/img/permtsblogo.svg');
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.analysys {
+                background-image: url('./../../nStatic/img/analmasonlogo.svg');
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
             }
         }
         p {
