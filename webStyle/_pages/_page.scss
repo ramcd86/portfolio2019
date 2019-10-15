@@ -1,15 +1,28 @@
 // This file is for defining pages.
 
+canvas {
+    position: fixed !important;
+}
+
 
 .flow-over {
-    position: absolute;
+    // position: absolute;
+    position: fixed !important;
     left: 0px;
     top: 0px;
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background: rgb(3,9,23);
-    background: linear-gradient(0deg, rgba(3,9,23,1) 0%, rgba(3,9,23,0) 100%);
+    background: rgba(3,9,23, 0.6);
+    .flow-bg {
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-image: url('./../../nStatic/img/linebg.png');
+    }
+    // background: linear-gradient(0deg, rgba(3,9,23,1) 0%, rgba(3,9,23,0) 100%);
 }
 
 main {
@@ -20,7 +33,7 @@ main {
 .container--Profile {
     display: block;
     .header-container {
-        background-image: url('./../../nStatic/img/background1.png');
+        background-image: url('./../../nStatic/img/background2.png');
         min-height: 100vh;
         background-repeat: no-repeat;
         background-position: center -50px;
@@ -52,7 +65,6 @@ main {
         margin-bottom: 270px;
         .tech-jumbo {
             min-height: 400px;
-            // background-image: url('./../../nStatic/img/first-title.jpeg');
             background-position: center;
             background-size: 105%;
             margin-bottom: 30px;
@@ -65,17 +77,17 @@ main {
             }
         }
         .col-bar {
-            border-right: 1px solid #2A526C;
+            border-right: 1px solid #391E3B;
         }
         p {
-            color: #85C8F3;
+            color: #FEF0FF;
             font-size: 18px;
             line-height: 165%;
             display: block;
         }
         h3 {
             font-size: 22px;
-            color: #C5C6C7;
+            color: #AF36B9;
             line-height: 165%;
             display: block;
             font-weight: 600;
@@ -117,57 +129,57 @@ main {
         .companies-blurb {
             padding-bottom: 30px;
             margin-bottom: 30px;
-            border-bottom: 1px solid #2A526C;
+            border-bottom: 1px solid #391E3B;
         }
         .brand-container {
             min-height: 210px;
             margin-bottom: 30px;
             &.energia {
-                background-image: url('./../../nStatic/img/energialogo.svg');
+                background-image: url('./../../nStatic/img/p-energia.png');
                 background-size: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             &.hornby {
-                background-image: url('./../../nStatic/img/hornbylogo.svg');
+                background-image: url('./../../nStatic/img/p-hornby.png');
                 background-size: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             &.gym {
-                background-image: url('./../../nStatic/img/gymlogo.svg');
+                background-image: url('./../../nStatic/img/p-gym.png');
                 background-size: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             &.ferries {
-                background-image: url('./../../nStatic/img/irishferrieslogo.svg');
+                background-image: url('./../../nStatic/img/p-ferries.png');
                 background-size: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             &.permtsb {
-                background-image: url('./../../nStatic/img/permtsblogo.svg');
+                background-image: url('./../../nStatic/img/p-tsb.png');
                 background-size: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             &.analysys {
-                background-image: url('./../../nStatic/img/analmasonlogo.svg');
+                background-image: url('./../../nStatic/img/p-ana.png');
                 background-size: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
         }
         p {
-            color: #85C8F3;
+            color: #FEF0FF;
             font-size: 18px;
             line-height: 165%;
             display: block;
         }
         h3 {
             font-size: 22px;
-            color: #C5C6C7;
+            color: #AF36B9;
             line-height: 165%;
             display: block;
             font-weight: 600;
