@@ -36,14 +36,18 @@ main {
         background-image: url('./../../nStatic/img/background2.png');
         min-height: 100vh;
         background-repeat: no-repeat;
-        background-position: center -50px;
+        background-position: center -100px;
         background-size: contain;
         @include media-breakpoint-down(sm) {
             background-position: center 80px;
             background-size: 125%;
         }
         .arrow-strapper {
-            margin-top: 65vh;
+            padding-top: 75vh;
+            // background-image: url('./../../nStatic/img/p-title.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+            // background-size: 100%;
             @include media-breakpoint-down(sm) {
                 margin-top: 70vh;
             }
