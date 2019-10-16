@@ -8,20 +8,15 @@
     height: 100vh;
     position: fixed;
     display: block;
-    z-index: 9;
+    z-index: 1;
     text-align: center;
-    transform: scale(0.0);
-    transition-property: all;
-    // transition-property: transform;
-    transition-duration: 2s;
-
     .ring {
         display: inline-block;
-        width: 100vh;
-        height: 100vh;
+        margin-top: 10vh;
+        width: 80vh;
+        height: 80vh;
         border-radius: 50vh;
-        border: 300px solid #AF36B9;
-        // background-color: #391E3B;
+        border: 200px solid #030917;
     }
 }
 

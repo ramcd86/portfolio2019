@@ -1,8 +1,4 @@
 declare global {
-    interface Window {
-        // scroll: any;
-        // scrollBy: any;
-    }
     interface HTMLElement {
         scrollIntoView: any;
     }
@@ -10,11 +6,6 @@ declare global {
 
 export class GlobalComponent {
 
-    public string: string;
-    public number: number;
-    public boolean: boolean;
-
-    public roller: HTMLElement;
 
     public aboutAnchor: HTMLElement;
     public techAnchor: HTMLElement;
@@ -27,7 +18,6 @@ export class GlobalComponent {
 
     constructor() {
 
-        this.roller = document.querySelector('#rollerContainer');
 
         this.aboutAnchor = document.querySelector('#aboutAnchor');
         this.techAnchor = document.querySelector('#techAnchor');
@@ -47,34 +37,22 @@ export class GlobalComponent {
             this.aboutAnchor.scrollIntoView({
                 behavior: 'smooth'
             })
-            this.rollerAnimator();
         })
 
         this.techLink.addEventListener('click', () => {
             this.techAnchor.scrollIntoView({
                 behavior: 'smooth'
             })
-            this.rollerAnimator();
         })
 
         this.companiesLink.addEventListener('click', () => {
             this.companiesAnchor.scrollIntoView({
                 behavior: 'smooth'
             })
-            this.rollerAnimator();
         })
 
 
     }
 
-    public rollerAnimator(): void {
-        const roller: HTMLElement = document.querySelector('#rollerContainer');
-        const rollerClone = roller.cloneNode(true);
-        roller.style.transform = "scale(10)";
-        roller.style.opacity = "0";
-        setTimeout(() => {
-            roller.parentNode.replaceChild(rollerClone, roller);
-        }, 1000);
-    }
 
 }
