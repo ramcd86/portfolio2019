@@ -71,9 +71,10 @@ export class GlobalComponent {
         const roller: HTMLElement = document.querySelector('#rollerContainer');
         const rollerClone = roller.cloneNode(true);
         roller.style.transform = "scale(10)";
+        roller.style.opacity = "0";
         setTimeout(() => {
             roller.parentNode.replaceChild(rollerClone, roller);
-        }, 600);
+        }, 1000);
     }
 
 }
