@@ -1,5 +1,31 @@
 // This file is for defining pages.
 
+.roller {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    z-index: 9;
+    text-align: center;
+    transform: scale(0.0);
+    transition-property: all;
+    transition-property: transform;
+    transition-duration: 2s;
+    &.big {
+        transform: scale(20); 
+    }
+    .ring {
+        display: inline-block;
+        width: 100vh;
+        height: 100vh;
+        border-radius: 50vh;
+        border: 300px solid #AF36B9;
+        @include media-breakpoint-down(sm) {
+            border: 100px solid #AF36B9;
+        }
+    }
+}
+
 .nav-bar {
     position: fixed;
     z-index: 10;

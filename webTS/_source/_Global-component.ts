@@ -14,6 +14,8 @@ export class GlobalComponent {
     public number: number;
     public boolean: boolean;
 
+    public roller: HTMLElement;
+
     public aboutAnchor: HTMLElement;
     public techAnchor: HTMLElement;
     public companiesAnchor: HTMLElement;
@@ -24,6 +26,8 @@ export class GlobalComponent {
     public contactLink: HTMLElement;
 
     constructor() {
+
+        this.roller = document.querySelector('#rollerContainer');
 
         this.aboutAnchor = document.querySelector('#aboutAnchor');
         this.techAnchor = document.querySelector('#techAnchor');
@@ -37,27 +41,39 @@ export class GlobalComponent {
         this.init()
     }
 
-    public init() {
+    public init(): void {
 
         this.aboutLink.addEventListener('click', () => {
             this.aboutAnchor.scrollIntoView({
                 behavior: 'smooth'
             })
+            this.rollerAnimator();
         })
 
         this.techLink.addEventListener('click', () => {
             this.techAnchor.scrollIntoView({
                 behavior: 'smooth'
             })
+            this.rollerAnimator();
         })
 
         this.companiesLink.addEventListener('click', () => {
             this.companiesAnchor.scrollIntoView({
                 behavior: 'smooth'
             })
+            this.rollerAnimator();
         })
 
 
+    }
+
+    public rollerAnimator(): void {
+        const roller: HTMLElement = document.querySelector('#rollerContainer');
+        const rollerClone = roller.cloneNode(true);
+        roller.style.transform = "scale(10)";
+        setTimeout(() => {
+            roller.parentNode.replaceChild(rollerClone, roller);
+        }, 600);
     }
 
 }
