@@ -20,9 +20,9 @@
         height: 100vh;
         border-radius: 50vh;
         border: 300px solid #AF36B9;
-        @include media-breakpoint-down(sm) {
-            border: 100px solid #AF36B9;
-        }
+        // @include media-breakpoint-down(sm) {
+        //     border: 100px solid #AF36B9;
+        // }
     }
 }
 
