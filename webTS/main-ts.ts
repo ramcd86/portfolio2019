@@ -3,6 +3,7 @@
 // These imports are installed by nFrame automatically.
 import { BrowserUtility } from './_source/_BrowserUtility-component'; 
 import { GlobalComponent } from './_source/_Global-component'; 
+import { jsRender } from './../webJS/main-js';
 
 
 // Manual Imports.
@@ -16,11 +17,11 @@ class MainComponent {
     }
 
     public init()  {
+        jsRender();
 
-
-    if (document.querySelector('.container--Global')) {
+    // if (document.querySelector('.container--Global')) {
          new GlobalComponent(); 
-     }; 
+    //  }; 
 
 
     }
